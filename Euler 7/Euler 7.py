@@ -11,7 +11,6 @@ def is_prime(num):
 
 def find_prime(target_prime = 6):
     count = 0
-    # for i in range(1,(target_prime)):
     it=0
     while count<target_prime:
         it+=1
