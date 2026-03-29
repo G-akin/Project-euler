@@ -16,9 +16,8 @@ def gen_fib_to_n_dig(n_dig):
         current_value = previous_terms[0] + previous_terms[1]
         previous_terms[0], previous_terms[1] = previous_terms[1], current_value
         if is_n_digits(current_value,n_dig):
-            print(index)
             run = False
+            return ("Index:", index,"Term:",current_value)
 
 
-gen_fib_to_n_dig(1000)
-
+print(gen_fib_to_n_dig(1000))
